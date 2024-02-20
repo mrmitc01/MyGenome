@@ -1,6 +1,10 @@
 # MyGenome
+Analyses for ABT480/CS485G genome assembly
 
-## Methods
-
-### Sequence Quality Assessment
-Record methods/summarize results
+## 1. Analysis of sequence quality
+The F1 and R1 sequence datasets were analyzed using FASTQC:
+```bash
+ssh -Y linkblueID@linkblueID.cs.uky.edu
+cd MyGenome
+fastqc &
+```
