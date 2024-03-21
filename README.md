@@ -24,3 +24,20 @@ java -jar ../sequences/trimmomatic-0.38.jar PE -threads 2 -phred33 -trimlog UFVP
 ```bash
 grep '@A00261' -c UFVPY218_1_paired.fastq
 ```
+
+## 4. Assemble myGenome
+```bash
+ssh linkblueID@mcc.uky.edu
+cd /project/farman_s24cs485g/linkblueID
+cp ../SLURM_SCRIPTS/velvetoptimiser_noclean.sh .
+nano velvetoptimiser_noclean.sh
+```
+Use nano to add your email address to the mail-user line of the slurm script
+#SBATCH --mail-user farman@uky.edu,linkBlueID@uky.edu
+```bash
+sbatch velvetoptimiser_noclean.sh UFVPY218 61 131 10
+cat slurm-21274784.out
+
+sbatch velvetoptimiser_noclean.sh UFVPY218 91 111 2
+cat slurm-21274802.out
+```
