@@ -33,6 +33,7 @@ cp ../SLURM_SCRIPTS/velvetoptimiser_noclean.sh .
 nano velvetoptimiser_noclean.sh
 ```
 Use nano to add your email address to the mail-user line of the slurm script
+
 #SBATCH --mail-user farman@uky.edu,linkBlueID@uky.edu
 ```bash
 sbatch velvetoptimiser_noclean.sh UFVPY218 61 131 10
