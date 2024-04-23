@@ -61,7 +61,7 @@ perl ../../../SCRIPTs/SimpleFastaHeaders.pl UFVPY218.fasta UFVPY218
 Output files:
 [slurm-21274784.out](/data/slurm-21274784.out), [slurm-21274802.out](/data/slurm-21274802.out), and [19-03-2024-15-17-15_Logfile.txt](/data/19-03-2024-15-17-15_Logfile.txt)
 
-## 6. Check genome completeness using BUSCO
+## 5. Check genome completeness using BUSCO
 ```bash
 ssh linkblueID@mcc.uky.edu
 cd /project/farman_s24cs485g/linblueID/
@@ -79,7 +79,7 @@ cat busco_916945.log
 scp UFVPY218_nh.fasta mrmi248@mrmi248.cs.uky.edu:~/blast/UFVPY218_nh.fasta
 ```
 
-## 7. BLAST myGenome
+## 6. BLAST myGenome
 ```bash
 ssh linkblueID@linkblueID.cs.uky.edu
 cd blast
@@ -117,7 +117,7 @@ Use nano to add your email address to the mail-user line of the slurm script
 sbatch CallVariants.sh ./UFVPY218_BLAST
 ```
 
-## 8. Gene Prediction
+## 7. Gene Prediction
 ```bash
 ssh linkblueID@linkblueID.cs.uky.edu
 cd genes/snap
