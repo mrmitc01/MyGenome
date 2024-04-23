@@ -15,7 +15,7 @@ Take screenshots of output files:
 ![F1screenshot.png](/data/UFVP218_1_screenshot.PNG)
 ![R1screenshot.png](/data/UFVP218_2_screenshot.PNG)
 
-## 2. Ran trimmomatic
+## 2. Run trimmomatic
 ```bash
 $env:DISPLAY = "localhost:0"
 ssh -Y linkblueID@linkblueID.cs.uky.edu
@@ -58,6 +58,8 @@ cd /project/farman_s24cs485g/linblueID/UFVPY218/velvet_UFVPY218_91_111_2_noclean
 mv contigs.fa UFVPY218.fasta
 perl ../../../SCRIPTs/SimpleFastaHeaders.pl UFVPY218.fasta UFVPY218
 ```
+Output files:
+[slurm-21274784.out](/data/slurm-21274784.out), [slurm-21274802.out](/data/slurm-21274802.out), and [19-03-2024-15-17-15_Logfile.txt](/data/19-03-2024-15-17-15_Logfile.txt)
 
 ## 6. Check genome completeness using BUSCO
 ```bash
