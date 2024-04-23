@@ -1,0 +1,139 @@
+SLURM_NODELIST: rome127
+Lmod has detected the following error: The following module(s) are unknown:
+"ccs/singularity"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "ccs/singularity"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+****************************************************
+           VelvetOptimiser.pl Version 2.2.6
+****************************************************
+Number of CPUs available: 128
+Current free RAM: 981.585GB
+Velvet OMP compiler setting: 1
+Mar 19 15:00:27 Starting to check input parameters.
+	Velveth parameter string OK.
+Mar 19 15:00:27 Finished checking input parameters.
+Velvet details:
+	Velvet version: 1.2.10
+	Compiled categories: 4
+	Compiled max kmer length: 191
+	Maximum number of velvetinstances to run: 128
+Will run velvet optimiser with the following paramters:
+	Velveth parameter string:
+		 -shortPaired -fastq -separate forward.fq reverse.fq
+	Velveth start hash values:	61
+	Velveth end hash value:		131
+	Velveth hash step value:	10
+	Velvetg minimum coverage cutoff to use:	0
+
+	Read tracking for final assembly off.
+Mar 19 15:00:27 Beginning velveth runs.
+Logfile name: 19-03-2024-15-00-27_Logfile.txt
+Mar 19 15:00:27		Running velveth with hash value: 61.
+Mar 19 15:00:29		Running velveth with hash value: 71.
+Mar 19 15:00:31		Running velveth with hash value: 81.
+Mar 19 15:00:33		Running velveth with hash value: 91.
+Mar 19 15:00:35		Running velveth with hash value: 101.
+Mar 19 15:00:37		Running velveth with hash value: 111.
+Mar 19 15:00:39		Running velveth with hash value: 121.
+Mar 19 15:00:41		Running velveth with hash value: 131.
+Mar 19 15:02:25		Velveth with hash value 71 finished.
+Mar 19 15:02:30		Velveth with hash value 61 finished.
+Mar 19 15:02:31		Velveth with hash value 131 finished.
+Mar 19 15:02:36		Velveth with hash value 121 finished.
+Mar 19 15:02:37		Velveth with hash value 81 finished.
+Mar 19 15:02:38		Velveth with hash value 91 finished.
+Mar 19 15:02:38		Velveth with hash value 101 finished.
+Mar 19 15:02:39		Velveth with hash value 111 finished.
+Mar 19 15:02:39 Finished velveth runs.
+Mar 19 15:02:39 Beginning vanilla velvetg runs.
+Mar 19 15:02:39		Running vanilla velvetg on hash value: 61
+Mar 19 15:02:41		Running vanilla velvetg on hash value: 71
+Mar 19 15:02:43		Running vanilla velvetg on hash value: 81
+Mar 19 15:02:45		Running vanilla velvetg on hash value: 91
+Mar 19 15:02:47		Running vanilla velvetg on hash value: 101
+Mar 19 15:02:49		Running vanilla velvetg on hash value: 111
+Mar 19 15:02:51		Running vanilla velvetg on hash value: 121
+Mar 19 15:02:53		Running vanilla velvetg on hash value: 131
+Mar 19 15:05:25		Velvetg on hash value: 131 finished.
+Mar 19 15:05:58		Velvetg on hash value: 121 finished.
+Mar 19 15:06:01		Velvetg on hash value: 111 finished.
+Mar 19 15:06:06		Velvetg on hash value: 101 finished.
+Mar 19 15:06:19		Velvetg on hash value: 91 finished.
+Mar 19 15:06:25		Velvetg on hash value: 81 finished.
+Mar 19 15:06:41		Velvetg on hash value: 71 finished.
+Mar 19 15:07:09		Velvetg on hash value: 61 finished.
+Mar 19 15:07:10 Hash value of best assembly by assembly score: 101
+Mar 19 15:07:10 Optimisation routine chosen for best assembly: shortPaired
+Mar 19 15:07:10 Looking for the expected coverage
+Mar 19 15:07:17		Expected coverage set to 14
+Mar 19 15:07:18 Setting assembly short insert length(s) to auto
+Mar 19 15:07:18 Beginning coverage cutoff optimisation
+Mar 19 15:07:24		Setting cov_cutoff to 6.922.
+Mar 19 15:09:08		Setting cov_cutoff to 4.278.
+		Looking for best cutoff score between 0.000 and 11.200
+		Max cutoff lies between 0.000 & 6.922
+		fc = 40573645	fd = 41392535	abs diff = 818890
+Mar 19 15:10:00		Setting cov_cutoff to 2.644.
+		Max cutoff lies between 0.000 & 4.278
+		fc = 41392535	fd = 41668713	abs diff = 276178
+Mar 19 15:10:52		Setting cov_cutoff to 1.634.
+		Max cutoff lies between 0.000 & 2.644
+		fc = 41668713	fd = 41677789	abs diff = 9076
+Mar 19 15:11:43		Setting cov_cutoff to 1.010.
+		Max cutoff lies between 1.010 & 2.644
+		fc = 41677789	fd = 41677755	abs diff = 34
+Mar 19 15:12:36		Setting cov_cutoff to 2.020.
+		Max cutoff lies between 1.010 & 2.020
+		fc = 41668584	fd = 41677789	abs diff = 9205
+Mar 19 15:13:27		Setting cov_cutoff to 1.396.
+		Max cutoff lies between 1.010 & 1.634
+		fc = 41677789	fd = 41677885	abs diff = 96
+Mar 19 15:14:20		Setting cov_cutoff to 1.249.
+		Optimum value of cutoff is 1.63
+		Took 7 iterations
+Mar 19 15:15:12
+
+
+Final optimised assembly details:
+********************************************************
+Assembly id: 5
+Assembly score: 41677789
+Velveth timestamp: Mar 19 2024 15:02:38
+Velvetg timestamp: Mar 19 2024 15:15:11
+Velveth version: 1.2.10
+Velvetg version: 1.2.10
+Readfile(s): -shortPaired -fastq -separate forward.fq reverse.fq
+Velveth parameter string: auto_data_101 101  -shortPaired -fastq -separate forward.fq reverse.fq
+Velvetg parameter string: auto_data_101  -clean no -clean yes -exp_cov 14 -cov_cutoff 1.2485182726912
+Assembly directory: /project/farman_s24cs485g/mrmi248/UFVPY218/auto_data_101
+Velvet hash value: 101
+Roadmap file size: 750344419
+Total number of contigs: 7191
+n50: 31737
+length of longest contig: 201429
+Total bases in contigs: 43314938
+Number of contigs > 1k: 2834
+Total bases in contigs > 1k: 41677789
+Paired Library insert stats:
+Paired-end library 1 has length: 259, sample standard deviation: 96
+Paired-end library 1 has length: 260, sample standard deviation: 97
+**********************************************************
+
+
+Assembly output files are in the following directory:
+velvet_UFVPY218_61_131_10_noclean
+
+mv: cannot stat 'velvet_UFVPY218_61_131_10/contigs.fa': No such file or directory
+cp: cannot stat 'velvet_61_131_10/UFVPY218.fasta': No such file or directory
+ls: cannot access 'velvet_61_131_10/*Logfile.txt': No such file or directory
+cp: missing destination file operand after '/project/farman_s23cs485g/ASSEMBLIES/UFVPY218_61_131_10_'
+Try 'cp --help' for more information.

@@ -1,0 +1,152 @@
+SLURM_NODELIST: rome024
+mkdir: cannot create directory 'UFVPY218': File exists
+Lmod has detected the following error: The following module(s) are unknown:
+"ccs/singularity"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "ccs/singularity"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+****************************************************
+           VelvetOptimiser.pl Version 2.2.6
+****************************************************
+Number of CPUs available: 128
+Current free RAM: 984.139GB
+Velvet OMP compiler setting: 1
+Mar 19 15:17:15 Starting to check input parameters.
+	Velveth parameter string OK.
+Mar 19 15:17:15 Finished checking input parameters.
+Velvet details:
+	Velvet version: 1.2.10
+	Compiled categories: 4
+	Compiled max kmer length: 191
+	Maximum number of velvetinstances to run: 128
+Will run velvet optimiser with the following paramters:
+	Velveth parameter string:
+		 -shortPaired -fastq -separate forward.fq reverse.fq
+	Velveth start hash values:	91
+	Velveth end hash value:		111
+	Velveth hash step value:	2
+	Velvetg minimum coverage cutoff to use:	0
+
+	Read tracking for final assembly off.
+Mar 19 15:17:15 Beginning velveth runs.
+Logfile name: 19-03-2024-15-17-15_Logfile.txt
+Mar 19 15:17:15		Running velveth with hash value: 91.
+Mar 19 15:17:17		Running velveth with hash value: 93.
+Mar 19 15:17:19		Running velveth with hash value: 95.
+Mar 19 15:17:21		Running velveth with hash value: 97.
+Mar 19 15:17:23		Running velveth with hash value: 99.
+Mar 19 15:17:25		Running velveth with hash value: 101.
+Mar 19 15:17:27		Running velveth with hash value: 103.
+Mar 19 15:17:29		Running velveth with hash value: 105.
+Mar 19 15:17:31		Running velveth with hash value: 107.
+Mar 19 15:17:33		Running velveth with hash value: 109.
+Mar 19 15:17:35		Running velveth with hash value: 111.
+Mar 19 15:19:29		Velveth with hash value 91 finished.
+Mar 19 15:19:43		Velveth with hash value 93 finished.
+Mar 19 15:19:57		Velveth with hash value 97 finished.
+Mar 19 15:19:58		Velveth with hash value 95 finished.
+Mar 19 15:19:58		Velveth with hash value 101 finished.
+Mar 19 15:20:05		Velveth with hash value 103 finished.
+Mar 19 15:20:05		Velveth with hash value 99 finished.
+Mar 19 15:20:07		Velveth with hash value 105 finished.
+Mar 19 15:20:10		Velveth with hash value 107 finished.
+Mar 19 15:20:14		Velveth with hash value 111 finished.
+Mar 19 15:20:15		Velveth with hash value 109 finished.
+Mar 19 15:20:16 Finished velveth runs.
+Mar 19 15:20:16 Beginning vanilla velvetg runs.
+Mar 19 15:20:16		Running vanilla velvetg on hash value: 91
+Mar 19 15:20:18		Running vanilla velvetg on hash value: 93
+Mar 19 15:20:20		Running vanilla velvetg on hash value: 95
+Mar 19 15:20:22		Running vanilla velvetg on hash value: 97
+Mar 19 15:20:24		Running vanilla velvetg on hash value: 99
+Mar 19 15:20:26		Running vanilla velvetg on hash value: 101
+Mar 19 15:20:28		Running vanilla velvetg on hash value: 103
+Mar 19 15:20:30		Running vanilla velvetg on hash value: 105
+Mar 19 15:20:32		Running vanilla velvetg on hash value: 107
+Mar 19 15:20:34		Running vanilla velvetg on hash value: 109
+Mar 19 15:20:36		Running vanilla velvetg on hash value: 111
+Mar 19 15:23:43		Velvetg on hash value: 91 finished.
+Mar 19 15:23:51		Velvetg on hash value: 95 finished.
+Mar 19 15:23:51		Velvetg on hash value: 93 finished.
+Mar 19 15:23:51		Velvetg on hash value: 99 finished.
+Mar 19 15:23:55		Velvetg on hash value: 103 finished.
+Mar 19 15:23:56		Velvetg on hash value: 97 finished.
+Mar 19 15:23:56		Velvetg on hash value: 111 finished.
+Mar 19 15:23:57		Velvetg on hash value: 105 finished.
+Mar 19 15:23:59		Velvetg on hash value: 101 finished.
+Mar 19 15:24:03		Velvetg on hash value: 107 finished.
+Mar 19 15:24:07		Velvetg on hash value: 109 finished.
+Mar 19 15:24:07 Hash value of best assembly by assembly score: 99
+Mar 19 15:24:07 Optimisation routine chosen for best assembly: shortPaired
+Mar 19 15:24:07 Looking for the expected coverage
+Mar 19 15:24:15		Expected coverage set to 14
+Mar 19 15:24:16 Setting assembly short insert length(s) to auto
+Mar 19 15:24:16 Beginning coverage cutoff optimisation
+Mar 19 15:24:23		Setting cov_cutoff to 6.922.
+Mar 19 15:26:03		Setting cov_cutoff to 4.278.
+		Looking for best cutoff score between 0.000 and 11.200
+		Max cutoff lies between 0.000 & 6.922
+		fc = 40753126	fd = 41511865	abs diff = 758739
+Mar 19 15:26:51		Setting cov_cutoff to 2.644.
+		Max cutoff lies between 0.000 & 4.278
+		fc = 41511865	fd = 41768081	abs diff = 256216
+Mar 19 15:27:40		Setting cov_cutoff to 1.634.
+		Max cutoff lies between 0.000 & 2.644
+		fc = 41768081	fd = 41783966	abs diff = 15885
+Mar 19 15:28:28		Setting cov_cutoff to 1.010.
+		Max cutoff lies between 0.000 & 1.634
+		fc = 41783966	fd = 41783966	abs diff = 0
+Mar 19 15:29:17		Setting cov_cutoff to 0.624.
+		Max cutoff lies between 0.624 & 1.634
+		fc = 41783966	fd = 41780876	abs diff = 3090
+Mar 19 15:30:05		Setting cov_cutoff to 1.249.
+		Max cutoff lies between 1.010 & 1.634
+		fc = 41784063	fd = 41783966	abs diff = 97
+Mar 19 15:30:54		Setting cov_cutoff to 1.396.
+		Optimum value of cutoff is 1.63
+		Took 7 iterations
+Mar 19 15:31:42
+
+
+Final optimised assembly details:
+********************************************************
+Assembly id: 5
+Assembly score: 41784063
+Velveth timestamp: Mar 19 2024 15:20:05
+Velvetg timestamp: Mar 19 2024 15:31:42
+Velveth version: 1.2.10
+Velvetg version: 1.2.10
+Readfile(s): -shortPaired -fastq -separate forward.fq reverse.fq
+Velveth parameter string: auto_data_99 99  -shortPaired -fastq -separate forward.fq reverse.fq
+Velvetg parameter string: auto_data_99  -clean no -clean yes -exp_cov 14 -cov_cutoff 1.3958580857088
+Assembly directory: /project/farman_s24cs485g/mrmi248/UFVPY218/auto_data_99
+Velvet hash value: 99
+Roadmap file size: 755821180
+Total number of contigs: 5907
+n50: 34471
+length of longest contig: 201432
+Total bases in contigs: 43136724
+Number of contigs > 1k: 2692
+Total bases in contigs > 1k: 41784063
+Paired Library insert stats:
+Paired-end library 1 has length: 259, sample standard deviation: 96
+Paired-end library 1 has length: 260, sample standard deviation: 97
+**********************************************************
+
+
+Assembly output files are in the following directory:
+velvet_UFVPY218_91_111_2_noclean
+
+mv: cannot stat 'velvet_UFVPY218_91_111_2/contigs.fa': No such file or directory
+cp: cannot stat 'velvet_91_111_2/UFVPY218.fasta': No such file or directory
+ls: cannot access 'velvet_91_111_2/*Logfile.txt': No such file or directory
+cp: missing destination file operand after '/project/farman_s23cs485g/ASSEMBLIES/UFVPY218_91_111_2_'
+Try 'cp --help' for more information.
