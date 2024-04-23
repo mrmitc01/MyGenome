@@ -17,13 +17,25 @@ Take screenshots of output files:
 
 ## 2. Ran trimmomatic
 ```bash
+$env:DISPLAY = "localhost:0"
+ssh -Y linkblueID@linkblueID.cs.uky.edu
+cd MyGenome
 java -jar ../sequences/trimmomatic-0.38.jar PE -threads 2 -phred33 -trimlog UFVPY218_errorlog.txt UFVPY218_1.fq.gz UFVPY218_2.fq.gz UFVPY218_1_paired.fastq UFVPY218_1_unpaired.fastq UFVPY218_2_paired.fastq UFVPY218_2_unpaired.fastq SLIDINGWINDOW:20:20 MINLEN:120 ILLUMINACLIP:adaptors.fasta:2:30:10
+fastqc &
 ```
+
+Load four trimmed output files (UFVPY218_1_paired.fastq, UFVPY218_1_unpaired.fastq, UFVPY218_2_paired.fastq, and UFVPY218_2_unpaired.fastq) into GUI interface. Take screenshots of output files:
+
+![Trim1PairedScreenshot.png](/data/UFVPY218_1_paired_fastq_screenshot.PNG)
+![Trim1UnpairedScreenshot.png](/data/UFVPY218_1_unpaired_fastq_screenshot.PNG)
+![Trim2PairedScreenshot.png](/data/UFVPY218_2_paired_fastq_screenshot.PNG)
+![Trim2UnpairedScreenshot.png](/data/UFVPY218_2_unpaired_fastq_screenshot.PNG)
 
 ## 3. Count number of forward reads remaining
 ```bash
 grep '@A00261' -c UFVPY218_1_paired.fastq
 ```
+Result: 6955655
 
 ## 4. Assemble myGenome
 ```bash
