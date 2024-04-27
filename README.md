@@ -165,5 +165,4 @@ maker 2>&1 | tee maker.log
 gff3_merge -d UFVPY218_final.maker.output/UFVPY218_final_master_datastore_index.log -o UFVPY218_final-annotations.gff
 fasta_merge -d UFVPY218_final.maker.output/UFVPY218_final_master_datastore_index.log -o UFVPY218_final-genes.fasta
 ```
-Output files:
 Output files: UFVPY218-annotations.gff and UFVPY218-genes.fasta.all.maker.proteins.fasta contained in [gene-prediction.zip](/data/gene-prediction.zip)
