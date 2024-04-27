@@ -1,0 +1,64 @@
+SLURM_NODELIST: rome007
+PWD : /project/farman_s24cs485g/mrmi248/UFVPY218/velvet_UFVPY218_91_111_2_noclean
+Lmod has detected the following error: The following module(s) are unknown:
+"ccs/singularity"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "ccs/singularity"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+2024-03-21 15:08:18 INFO:	***** Start a BUSCO v5.7.0 analysis, current time: 03/21/2024 15:08:18 *****
+2024-03-21 15:08:18 INFO:	Configuring BUSCO with local environment
+2024-03-21 15:08:18 INFO:	Running genome mode
+2024-03-21 15:08:18 INFO:	'Force' option selected; overwriting previous results directory
+2024-03-21 15:08:18 INFO:	Downloading information on latest versions of BUSCO data...
+2024-03-21 15:08:20 INFO:	Input file is /project/farman_s24cs485g/mrmi248/UFVPY218/velvet_UFVPY218_91_111_2_noclean/UFVPY218.fasta
+2024-03-21 15:08:21 INFO:	Running BUSCO using lineage dataset ascomycota_odb10 (eukaryota, 2024-01-08)
+2024-03-21 15:08:21 INFO:	Running 1 job(s) on bbtools, starting at 03/21/2024 15:08:21
+2024-03-21 15:08:22 INFO:	[bbtools]	1 of 1 task(s) completed
+2024-03-21 15:08:22 INFO:	Running 1 job(s) on miniprot_index, starting at 03/21/2024 15:08:22
+2024-03-21 15:08:25 INFO:	[miniprot_index]	1 of 1 task(s) completed
+2024-03-21 15:08:25 INFO:	Running 1 job(s) on miniprot_align, starting at 03/21/2024 15:08:25
+2024-03-21 16:58:56 INFO:	[miniprot_align]	1 of 1 task(s) completed
+2024-03-21 17:03:29 INFO:	***** Run HMMER on gene sequences *****
+2024-03-21 17:03:31 INFO:	Running 1706 job(s) on hmmsearch, starting at 03/21/2024 17:03:31
+2024-03-21 17:03:52 INFO:	[hmmsearch]	171 of 1706 task(s) completed
+2024-03-21 17:04:06 INFO:	[hmmsearch]	342 of 1706 task(s) completed
+2024-03-21 17:04:21 INFO:	[hmmsearch]	512 of 1706 task(s) completed
+2024-03-21 17:04:34 INFO:	[hmmsearch]	683 of 1706 task(s) completed
+2024-03-21 17:04:47 INFO:	[hmmsearch]	853 of 1706 task(s) completed
+2024-03-21 17:04:57 INFO:	[hmmsearch]	1024 of 1706 task(s) completed
+2024-03-21 17:05:05 INFO:	[hmmsearch]	1195 of 1706 task(s) completed
+2024-03-21 17:05:16 INFO:	[hmmsearch]	1365 of 1706 task(s) completed
+2024-03-21 17:05:33 INFO:	[hmmsearch]	1536 of 1706 task(s) completed
+2024-03-21 17:05:53 INFO:	[hmmsearch]	1706 of 1706 task(s) completed
+2024-03-21 17:05:55 INFO:	44 candidate overlapping regions found
+2024-03-21 17:05:55 INFO:	4910 exons in total
+2024-03-21 17:05:56 WARNING:	61 of 1668 Complete matches (3.7%) contain internal stop codons in Miniprot gene predictions
+2024-03-21 17:05:59 INFO:	
+
+    -------------------------------------------------------------------------------------------
+    |Results from dataset ascomycota_odb10                                                     |
+    -------------------------------------------------------------------------------------------
+    |C:97.7%[S:97.5%,D:0.2%],F:0.7%,M:1.6%,n:1706,E:3.7%                                       |
+    |1668    Complete BUSCOs (C)    (of which 61 contain internal stop codons)                 |
+    |1664    Complete and single-copy BUSCOs (S)                                               |
+    |4    Complete and duplicated BUSCOs (D)                                                   |
+    |12    Fragmented BUSCOs (F)                                                               |
+    |26    Missing BUSCOs (M)                                                                  |
+    |1706    Total BUSCO groups searched                                                       |
+    -------------------------------------------------------------------------------------------
+2024-03-21 17:05:59 INFO:	BUSCO analysis done with WARNING(s). Total running time: 7058 seconds
+
+***** Summary of warnings: *****
+2024-03-21 17:05:56 WARNING:busco.busco_tools.hmmer	61 of 1668 Complete matches (3.7%) contain internal stop codons in Miniprot gene predictions
+
+2024-03-21 17:05:59 INFO:	Results written in /project/farman_s24cs485g/mrmi248/UFVPY218/velvet_UFVPY218_91_111_2_noclean/UFVPY218_busco
+2024-03-21 17:05:59 INFO:	For assistance with interpreting the results, please consult the userguide: https://busco.ezlab.org/busco_userguide.html
+
+2024-03-21 17:05:59 INFO:	Visit this page https://gitlab.com/ezlab/busco#how-to-cite-busco to see how to cite BUSCO
