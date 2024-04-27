@@ -118,6 +118,8 @@ Use nano to add your email address to the mail-user line of the slurm script
 ```bash
 sbatch CallVariants.sh ./UFVPY218_BLAST
 ```
+Output files:
+[MoMitochondrion.UFVPY218.BLAST](/data/MoMitochondrion.UFVPY218.BLAST), [UFVPY218_mitochondrion.csv](/data/UFVPY218_mitochondrion.csv), [B71v2sh.UFVPY218.BLAST](/data/B71v2sh.UFVPY218.BLAST), and [B71v2sh_v_UFVPY218_out](/data/B71v2sh_v_UFVPY218_out)
 
 ## 7. Perform gene prediction
 ```bash
