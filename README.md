@@ -1,7 +1,7 @@
 # MyGenome
 Analyses for ABT480/CS485G genome assembly
 
-## 1. Analysis of sequence quality
+## 1. Analyze sequence quality
 The F1 and R1 sequence datasets were analyzed using FASTQC:
 ```bash
 ssh -Y linkblueID@linkblueID.cs.uky.edu
@@ -61,7 +61,7 @@ perl ../../../SCRIPTs/SimpleFastaHeaders.pl UFVPY218.fasta UFVPY218
 Output files:
 [slurm-21274784.out](/data/slurm-21274784.out), [slurm-21274802.out](/data/slurm-21274802.out), and [19-03-2024-15-17-15_Logfile.txt](/data/19-03-2024-15-17-15_Logfile.txt)
 
-## 5. Check genome completeness using BUSCO
+## 5. Assess genome completeness using BUSCO
 ```bash
 ssh linkblueID@mcc.uky.edu
 cd /project/farman_s24cs485g/linblueID/
@@ -79,7 +79,7 @@ cat busco_916945.log
 scp UFVPY218_nh.fasta mrmi248@mrmi248.cs.uky.edu:~/blast/UFVPY218_nh.fasta
 ```
 
-## 6. BLAST myGenome
+## 6. BLAST myGenome against mitochondrial genome and the B71v2sh reference genome
 ```bash
 ssh linkblueID@linkblueID.cs.uky.edu
 cd blast
@@ -117,7 +117,7 @@ Use nano to add your email address to the mail-user line of the slurm script
 sbatch CallVariants.sh ./UFVPY218_BLAST
 ```
 
-## 7. Gene Prediction
+## 7. Perform gene prediction
 ```bash
 ssh linkblueID@linkblueID.cs.uky.edu
 cd genes/snap
@@ -163,5 +163,7 @@ screen
 maker 2>&1 | tee maker.log
 
 gff3_merge -d UFVPY218_final.maker.output/UFVPY218_final_master_datastore_index.log -o UFVPY218_final-annotations.gff
-fasta-merge -d UFVPY218_final.maker.output/UFVPY218_final_master_datastore_index.log -o UFVPY218_final-genes.fasta
+fasta_merge -d UFVPY218_final.maker.output/UFVPY218_final_master_datastore_index.log -o UFVPY218_final-genes.fasta
 ```
+Output files:
+Output files: UFVPY218-annotations.gff and UFVPY218-genes.fasta.all.maker.proteins.fasta contained in [gene-prediction.zip](/data/gene-prediction.zip)
