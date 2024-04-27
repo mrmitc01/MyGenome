@@ -75,9 +75,11 @@ Use nano to add your email address to the mail-user line of the slurm script
 cd /UFVPY218/velvet_UFVPY218_91_111_2_noclean
 sbatch ../../BuscoSingularity.sh UFVPY218.fasta
 cat slurm-21290995.out
-cat busco_916945.log
+cat UFVPY218_busco/logs/busco.log
 scp UFVPY218_nh.fasta mrmi248@mrmi248.cs.uky.edu:~/blast/UFVPY218_nh.fasta
 ```
+Output files:
+[slurm-21290995.out](/data/slurm-21290995.out), [busco.log](/data/busco.log), and UFVPY218_nh.fasta contained in [UFVPY218_nh_fasta.zip](/data/UFVPY218_nh_fasta.zip)
 
 ## 6. BLAST myGenome against mitochondrial genome and the B71v2sh reference genome
 ```bash
